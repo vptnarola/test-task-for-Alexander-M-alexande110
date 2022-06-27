@@ -45,3 +45,13 @@ The following tasks are designed to test your problem-solving skills on an exist
     
 4. The logged in employee needs the ability to increase or decrease the amount of allowed shoppers at locations.
     * This is just a simple way to comply with changing COVID-19 regulations.
+
+## NISL Comments about task implementation
+
+We have completed the test project as you have suggested. In which, we have perform the queue management using your existing code as well as our new code. To completed this task we have perform below sub-tasks:
+(A) We have set the code where user can checkout where we have check the queue number using services for that shopper and assign the status.
+(B) Once user checkout, then we have check that next shoppers status and manage the queue as well using Observer.
+(C) We have set the Queue job to check that user has not checkout after 2 hours. then Queue job will automatically checkout that user.
+Once you have set up the code please run the below commands.
+- php artisan command:auto-checkout-shoppers
+- php artisan queue:listen
